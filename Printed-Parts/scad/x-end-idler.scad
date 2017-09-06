@@ -12,11 +12,17 @@ use <x-end.scad>
 module x_end_idler_holes(){
     x_end_holes();
     translate([0,3.5,0]){
-    translate(v=[0,-22,30.25]) rotate(a=[0,-90,0]) cylinder(h = 80, r=1.8, $fn=30);
-    translate(v=[1.5,-22,30.25]) rotate(a=[0,-90,0]) cylinder(h = 10, r=3.1, $fn=30);
-    translate(v=[-21.5,-22,30.25]) rotate(a=[0,-90,0]) rotate(a=[0,0,30]) cylinder(h = 80, r=3.2, $fn=6);
         
- }
+        translate(v=[-11.5,-32.3,15.5]) rotate(a=[0,-90,0]) cube([29,40,7]);
+        
+        translate(v=[-6,-18.3,22.25]) rotate(a=[0,-90,0]) cube([16,4,18]);
+        translate(v=[-6,-25.8,22.25]) rotate(a=[0,-90,0]) cube([16,7,18]);
+        translate(v=[-6,-31.6,22.25]) rotate(a=[0,-90,0]) cube([16,5.3,18]);
+        
+        translate(v=[0,-22,30.25]) rotate(a=[0,-90,0]) cylinder(h = 80, r=1.8, $fn=30);
+        translate(v=[1.5,-22,30.25]) rotate(a=[0,-90,0]) cylinder(h = 10, r=3.1, $fn=30);
+        translate(v=[-21.5,-22,30.25]) rotate(a=[0,-90,0]) rotate(a=[0,0,30]) cylinder(h = 80, r=3.2, $fn=6);
+    }
 }
 
 
